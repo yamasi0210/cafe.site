@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="プログラミングを3分間">
+  <title>メニュー | KUZIRA CAFE</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="logo">
+      <a href="index2.html"><img src="logo.svg" alt="KUZIRA CAFE"></a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index2.html">ホーム</a></li>
+        <li><a href="index2.html#news">お知らせ</a></li>
+        <li><a href="index2.html#shop">店舗情報</a></li>
+        <li><a href="access2.html">アクセス</a></li>
+        <li><a href="menu2.html">メニュー</a></li>
+        <li><a href="contact2.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+  <!-- ヘッダー ここまで-->
+  <h1 class="hero contact">お問い合わせ</h1>
+  <!-- メイン-->
+  <main>
+    <form action="result.html">
+      <p>
+        お問い合わせ種類<br>
+        <label for="kind">お問い合わせ</label><br>
+        <select name="kind" id="kind">
+          <option value="1">ご予約</option>
+          <option value="2">イベントに関するお問い合わせ</option>
+          <option value="3">その他</option>
+        </select>
+      </p>
+      <p>
+        はじめての来店ですか？<br>
+        <label><input type="radio" name="first" value="yes" checked>はい</label><br>
+        <label><input type="radio" name="first" value="no">いいえ</label>
+      </p>
+      <p>
+        当カフェをお知りになったきっかけは？<br>
+        <label><input type="checkbox" name="how" value="friend">知り合いの紹介で</label><br>
+        <label><input type="checkbox" name="how" value="magazine">SNS、Webサイト、雑誌などをみて</label>
+      </p>
+      <p>
+        <label for="subject">お問い合わせの件名</label><br>
+        <input type="text" name="subject" placeholder="タイトル" id="subject">
+      </p>
+      <p>
+        <label for="message">お問い合わせの具体的な内容</label><br>
+        <textarea name="message" id="message"></textarea>
+      </p>
+      <p class="submit">
+        <input type="submit" value="送信">
+      </p>
+
+
+    </form>
+  </main>
+  <!-- メインここまで-->
+  <!-- フッタ-->
+  <footer>
+    <div class="gotop">
+      <a href="#top"><img src="gotop.svg" alt="トップへ戻る" </a>
+    </div>
+    <p class="copyright">&copy, KUZIRA CAFE</p>
+  </footer>
+  <!-- フッターここまで-->
+</body>
+
+</html>
